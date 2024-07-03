@@ -243,7 +243,7 @@ export class MapService {
     }
     const matrixIds = [];
     for (let i = 0; i < this.resolutions.length; i += 1) {
-      matrixIds.push(`${i}`);
+      matrixIds.push(`${16 + i}`); // 16 is the first level of the WMTS
     }
 
     const tileGrid = new WMTSTileGrid({
